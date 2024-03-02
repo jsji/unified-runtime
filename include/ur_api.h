@@ -5552,6 +5552,8 @@ typedef enum ur_command_t {
     UR_COMMAND_COMMAND_BUFFER_ENQUEUE_EXP = 0x1000,   ///< Event created by ::urCommandBufferEnqueueExp
     UR_COMMAND_INTEROP_SEMAPHORE_WAIT_EXP = 0x2000,   ///< Event created by ::urBindlessImagesWaitExternalSemaphoreExp
     UR_COMMAND_INTEROP_SEMAPHORE_SIGNAL_EXP = 0x2001, ///< Event created by ::urBindlessImagesSignalExternalSemaphoreExp
+    UR_COMMAND_BINDLESS_IMAGE_MEM_COPY_FROM_HOST = 0x3000, ///< Event created by ::urBindlessImagesImageCopyExp
+    UR_COMMAND_BINDLESS_IMAGE_MEM_COPY_TO_HOST = 0x3001, ///< Event created by ::urBindlessImagesImageCopyExp
     /// @cond
     UR_COMMAND_FORCE_UINT32 = 0x7fffffff
     /// @endcond
