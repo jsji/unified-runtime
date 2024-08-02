@@ -7,6 +7,7 @@ add_definitions(-DUR_VERSION="${PROJECT_VERSION_MAJOR}")
 add_definitions(-DUR_VALIDATION_LAYER_SUPPORTED_VERSION="${PROJECT_VERSION_MAJOR}")
 
 add_subdirectory(common)
+intel_clear_stdlib()
 add_subdirectory(loader)
 add_subdirectory(mock)
 add_subdirectory(adapters)
